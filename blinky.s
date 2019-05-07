@@ -27,7 +27,7 @@ blink:
 on:
   str w1, [x4]
 
-  mov x6, 0xf0000
+  mov x6, 0xf0000 // spin awhile
 loop1:
   sub x6, x6, #1
   cbnz x6, loop1
@@ -35,7 +35,7 @@ loop1:
 off:
   str w1, [x5]
 
-  mov x6, 0xf0000
+  mov x6, 0xf0000 // spin awhile
 loop2:
   sub x6, x6, #1
   cbnz x6, loop2

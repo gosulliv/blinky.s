@@ -10,10 +10,10 @@ pin that is, have a look at [pinout.xyz](http://pinout.xyz).
 
 ## Building
 You'll need to install a cross-compiler toolchain. On Ubuntu, I ran `apt-get
-install binutils-aarch64-linux-gnu`. As I understand it, the [target triplet](target-triplet)
-has to do with the preferred binary format and libraries it links against.
-Since there's a custom linker script, I don't think the target triplet matters
-apart from `aarch64`, but I could be wrong.
+install binutils-aarch64-linux-gnu`. The [target triplet](target-triplet) has
+to do with the preferred binary format and libraries the toolchain links
+against. Since there's a custom linker script, I don't think the target triplet
+matters apart from `aarch64`, but I'm happy to be proven wrong.
 
 To use the Makefile, you'll need to change the `TARGET` variable to the prefix
 for your assembler, linker, and objcopy.
@@ -49,7 +49,7 @@ everything else after.
 
 # License
 
-This code files are releastd into the public domain.  The README is Copyright
+This code files are released into the public domain.  The README is Copyright
 (c) 2019 Galen O'Sullivan. You can use it under [CC-BY-NC 2.0][cc-by-nc]. If
 you want to use it under another license, please email me and ask.
 
